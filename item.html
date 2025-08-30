@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NC Driving Education Study Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #003580;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #00265a;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004aad;
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .tab {
+      background: #e0e0e0;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .tab:hover {
+      background: #ccc;
+    }
+    .tab.active {
+      background: #004aad;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>North Carolina Driving Education Study Guide</h1>
+    <p>Interactive study resource based on the NC DMV Handbook</p>
+  </header>
+  <nav>
+    <a href="#laws">Driving Laws</a>
+    <a href="#signs">Traffic Signs</a>
+    <a href="#safety">Safe Driving</a>
+    <a href="#alcohol">Alcohol & Drugs</a>
+    <a href="#tests">Practice Tests</a>
+  </nav>
+  <main>
+    <section id="laws">
+      <h2>Driving Laws</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="laws-summary">Summary</button>
+        <button class="tab" data-target="laws-flashcards">Flashcards</button>
+        <button class="tab" data-target="laws-quiz">Quick Quiz</button>
+      </div>
+      <div id="laws-summary" class="tab-content active">
+        <p>Learn NC driving laws: speed limits, right of way, seat belts, child safety, licensing rules, penalties.</p>
+      </div>
+      <div id="laws-flashcards" class="tab-content">
+        <p><strong>Q:</strong> What is the maximum speed limit inside a city? <br><strong>A:</strong> 35 mph unless otherwise posted.</p>
+        <p><strong>Q:</strong> Who has the right of way at a 4-way stop? <br><strong>A:</strong> The first vehicle to arrive, or the vehicle on the right if arriving at the same time.</p>
+      </div>
+      <div id="laws-quiz" class="tab-content">
+        <p><em>Example Question:</em></p>
+        <p>What is the minimum BAC for a DWI in NC?<br>
+        <input type="radio" name="q1"> 0.04%<br>
+        <input type="radio" name="q1"> 0.06%<br>
+        <input type="radio" name="q1"> 0.08% ✅<br></p>
+      </div>
+    </section>
+
+    <section id="signs">
+      <h2>Traffic Signs</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="signs-summary">Summary</button>
+        <button class="tab" data-target="signs-flashcards">Flashcards</button>
+        <button class="tab" data-target="signs-quiz">Quick Quiz</button>
+      </div>
+      <div id="signs-summary" class="tab-content active">
+        <p>Study regulatory, warning, and guide signs. Recognize their colors and shapes.</p>
+      </div>
+      <div id="signs-flashcards" class="tab-content">
+        <p><strong>STOP Sign:</strong> Red octagon → complete stop.</p>
+        <p><strong>YIELD Sign:</strong> Red/white triangle → slow and give way.</p>
+      </div>
+      <div id="signs-quiz" class="tab-content">
+        <p><em>Example Question:</em></p>
+        <p>What does a yellow diamond-shaped sign indicate?<br>
+        <input type="radio" name="q2"> Regulatory instruction<br>
+        <input type="radio" name="q2"> General warning ✅<br>
+        <input type="radio" name="q2"> Destination information<br></p>
+      </div>
+    </section>
+
+    <section id="safety">
+      <h2>Safe Driving</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="safety-summary">Summary</button>
+        <button class="tab" data-target="safety-strategies">Strategies</button>
+      </div>
+      <div id="safety-summary" class="tab-content active">
+        <p>Defensive driving, sharing the road, driving in weather, work zones, and night driving tips.</p>
+      </div>
+      <div id="safety-strategies" class="tab-content">
+        <ul>
+          <li>Keep 2-second following distance.</li>
+          <li>Check mirrors every 5–8 seconds.</li>
+          <li>Slow down in poor weather.</li>
+          <li>Be cautious in construction zones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="alcohol">
+      <h2>Alcohol & Drugs</h2>
+      <div class="tabs">
+        <button class="tab active" data-target="alcohol-summary">Summary</button>
+        <button class="tab" data-target="alcohol-facts">Facts</button>
+      </div>
+      <div id="alcohol-summary" class="tab-content active">
+        <p>NC laws on BAC, penalties, and zero tolerance under 21.</p>
+      </div>
+      <div id="alcohol-facts" class="tab-content">
+        <ul>
+          <li>0.08% BAC is the legal limit for drivers over 21.</li>
+          <li>Under 21: any alcohol is illegal (0.00% required).</li>
+          <li>DWI penalties include fines, license suspension, and possible jail time.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tests">
+      <h2>Practice Tests</h2>
+      <p>You can embed your own Google Form quizzes here for interactive practice.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Created as a free study resource. Not an official NC DMV site.</p>
+  </footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const parent = tab.closest('section');
+        parent.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        parent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        parent.querySelector(`#${tab.dataset.target}`).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
